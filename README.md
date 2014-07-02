@@ -12,7 +12,7 @@ To test
 ```
 or
 ```racket
-(define test (call-with-input-file "yourfile.jpg" read-tiff-file-props))
+(define test (call-with-input-file "yourfile.tiff" read-tiff-file-props))
 (map parse-entry (read-ifd (get-field first-ifd test)))
 ```
 
