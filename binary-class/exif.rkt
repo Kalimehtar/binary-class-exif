@@ -1,7 +1,7 @@
 #lang racket/base
 (require binary-class racket/class racket/match)
 (provide read-jpeg-file-props read-tiff-file-props
-         parse-entry read-ifd)
+         parse-entry read-ifd tiff jpeg)
 
 (define (read-jpeg-file-props in)
   (unless (jpeg-goto-marker in #xe1)
